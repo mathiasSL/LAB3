@@ -3,41 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_perfil">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.lab3.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_perfil"
+        android:name="com.example.lab3.ui.perfil.PerfilFragment"
+
+        tools:layout="@layout/fragment_perfil" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.lab3.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_contratos"
+        android:name="com.example.lab3.ui.contratos.ContratosFragment"
+
+        tools:layout="@layout/fragment_contratos" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.lab3.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_puestosofrecidos"
+        android:name="com.example.lab3.ui.puestosofrecidos.PuestosofrecidosFragment"
+
+        tools:layout="@layout/fragment_puestosofrecidos" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.lab3.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_cerrarsesion"
+        android:name="com.example.lab3.ui.cerrarsesion.CerrarsesionFragment"
 
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.lab3.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.lab3.ui.send.SendFragment"
-        android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
 </navigation>
